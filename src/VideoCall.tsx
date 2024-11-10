@@ -21,7 +21,7 @@ export default function VideoCall({
       <div className="flex w-full justify-around p-4 flex-col md:flex-row sm:max-h-full">
         {
           <div className={`relative m-2 ` + (RS == null ? "hidden" : "")}>
-            <p className="absolute text-white font-semibold max-md:text-lg left-2 top-2">
+            <p className="absolute text-white font-semibold text-sm md:text-lg left-2 top-2">
               Other Video :
             </p>
             <video
@@ -39,7 +39,7 @@ export default function VideoCall({
 
         {
           <div className={"relative m-2" + (LS == null ? " hidden" : "")}>
-            <p className="absolute text-white font-semibold max-md:text-lg left-2 top-2">
+            <p className="absolute text-white font-semibold text-sm md:text-lg left-2 top-2">
               My Video :
             </p>
             <video

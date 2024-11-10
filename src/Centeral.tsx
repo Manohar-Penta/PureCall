@@ -344,7 +344,7 @@ export default function Centeral() {
   }
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:3000");
+    const socket = new WebSocket("wss://purecall-server.onrender.com");
 
     socket.onopen = () => {
       console.log("socket opening!!");
@@ -376,11 +376,11 @@ export default function Centeral() {
   return (
     <div className="bg-slate-800 text-white min-h-screen p-2 flex flex-col justify-start">
       {id && pcRef.current == null ? (
-        <h1 className="text-white text-2xl p-8 mb-2 mx-0 text-center">
+        <h1 className="text-white text-sm md:text-xl p-2 md:p-6 mb-2 mx-0 text-center">
           Your ID : {id}
         </h1>
       ) : pcRef.current == null ? (
-        <div className="text-center text-xl font-semibold p-4">
+        <div className="text-center text-base md:text-xl font-semibold p-4">
           Connecting the Server...
         </div>
       ) : (

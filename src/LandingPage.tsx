@@ -19,8 +19,8 @@ export default function LandingPage() {
     <div className="text-center">
       <div className="p-6 bg-blue-800 gap-14 flex flex-col justify-around items-center text-white">
         <div>
-          <h1 className="text-9xl text-white font-bold">PureCall</h1>
-          <p className="text-3xl text-gray-400">
+          <h1 className="text-5xl md:text-9xl text-white font-bold">PureCall</h1>
+          <p className="text-xl md:text-3xl text-gray-400">
             Effortless Anonymous Video Calls
           </p>
         </div>
@@ -38,20 +38,20 @@ export default function LandingPage() {
           >
             <CarouselContent>
               <CarouselItem>
-                <p className="text-2xl p-4">
+                <p className="text-large md:text-2xl p-4">
                   No signup needed!! make quick call to your friend without
                   evening droping your name.
                 </p>
               </CarouselItem>
               <CarouselItem>
-                <p className="text-2xl p-4">
+                <p className="text-large md:text-2xl p-4">
                   Can't find the pricing?? because there is no pricing. WebRTC
                   enables direct connection between Users with no extra server
                   in between.
                 </p>
               </CarouselItem>
               <CarouselItem>
-                <p className="text-2xl p-4">
+                <p className="text-large md:text-2xl p-4">
                   Low latency & High quality Video calls with your friends.
                 </p>
               </CarouselItem>
@@ -67,40 +67,42 @@ export default function LandingPage() {
           Call Them Now
         </Button>
       </div>
-      <div className="text-black flex flex-col justify-around p-6">
-        <h2 className="text-6xl p-6 font-semibold text-blue-800 mb-10">
+      <div className="text-black flex flex-col justify-center p-6">
+        
+        <h2 className="text-4xl md:text-6xl p-6 font-semibold text-blue-800 mb-10">
           Why use PureCall??
         </h2>
-        <div className="md:flex m-4 justify-evenly my-auto">
-          <div className="border shadow-md p-6 w-1/5 rounded flex flex-col items-center gap-4">
+
+        <div className="md:flex m-4 my-auto justify-center gap-6">
+          <div className="border shadow-md p-4 md:p-6 rounded flex flex-col items-center gap-4 basis-[300px]">
             <MdNoAccounts size={"7rem"} />
-            <h3 className="text-2xl font-semibold text-blue-800">No Signup</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-blue-800">No Signup</h3>
             <p>
               Get a ID from us, share it with the person you want to interact
             </p>
           </div>
-          <div className="border shadow-md p-6 w-1/5 rounded flex flex-col items-center gap-4">
+          <div className="border shadow-md md:p-6 p-4 rounded flex flex-col items-center gap-4 basis-[300px]">
             <MdCrueltyFree size={"7rem"} />
-            <h3 className="text-2xl font-semibold text-blue-800">
+            <h3 className="text-xl md:text-2xl font-semibold text-blue-800">
               Free for ever
             </h3>
             <p>Never pay for video calls again</p>
           </div>
-          <div className="border shadow-md p-6 w-1/5 rounded flex flex-col items-center gap-4">
+          <div className="border shadow-md md:p-6 p-4 rounded flex flex-col items-center gap-4 basis-[300px]">
             <MdOutlineVideoChat size={"7rem"} />
-            <h3 className="text-2xl font-semibold text-blue-800">
+            <h3 className="text-xl md:text-2xl font-semibold text-blue-800">
               Quality Interactions
             </h3>
             <p>Interact in High Quality & Low latency video calls</p>
           </div>
         </div>
       </div>
-      <div className="bg-gray-200 text-black text-2xl p-6 m-6 gap-4 md:p-12">
-        <h2 className="text-4xl font-semibold text-blue-800">
+      <div className="bg-gray-200 text-black text-md md:text-2xl p-6 m-6 gap-4 md:p-12">
+        <h2 className="text-2xl md:text-4xl font-semibold text-blue-800">
           How does PureCall Work??
         </h2>
         <br />
-        <p className="leading-8 ">
+        <p className="md:leading-8">
           PureCall enables users to connect through video calls directly from
           their browsers using WebRTC technology. By leveraging WebRTC, PureCall
           provides real-time, high-quality video communication without the need
@@ -109,7 +111,7 @@ export default function LandingPage() {
           improved call quality.
         </p>
       </div>
-      <div className="h-30 bg-blue-700 mt-4 text-4xl text-white p-6">
+      <div className="h-30 bg-blue-700 mt-4 text-2xl md:text-4xl text-white p-6">
         Stay tunned for up coming features...
       </div>
     </div>

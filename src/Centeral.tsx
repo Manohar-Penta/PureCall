@@ -344,7 +344,7 @@ export default function Centeral() {
   }
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:3000");
+    const socket = new WebSocket("wss://purecall-server.onrender.com");
 
     socket.onopen = () => {
       console.log("socket opening!!");
